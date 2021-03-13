@@ -9,7 +9,7 @@ int GAME(char c, char u)
     {
         return -1;
     }
-    if ((c = 'r') && (u = 'p'))
+    if ((u = 'r') && (c = 'p'))
     {
         return 1;
     }
@@ -17,7 +17,7 @@ int GAME(char c, char u)
     {
         return 0;
     }
-    if ((c = 's') && (u = 'r'))
+    if ((u = 's') && (c = 'r'))
     {
         return 1;
     }
@@ -25,7 +25,7 @@ int GAME(char c, char u)
     {
         return 0;
     }
-    if ((c = 'p') && (u = 's'))
+    if (u = 'p') && (c = 's'))
     {
         return 1;
     }
@@ -102,13 +102,13 @@ int main()
     {
         printf("computer score : %d\n", compscr);
         printf("%s's score : %d\n", name, userscr);
-        printf("*****YOU LOOSE*****");
+        printf("*****YOU LOOSE by %d points*****,compscr-userscr");
     }
     else
     {
         printf("computer score : %d\n", compscr);
         printf("%s's score : %d\n", name, userscr);
-        printf("*****YOU win*****");
+        printf("*****YOU WIN by %d points *****,userscr-compscr");
     }
 
     return 0;
